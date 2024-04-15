@@ -1,0 +1,28 @@
+databaseChangeLog:
+- changeSet:
+    id: 1713169180271-1
+    author: sadik (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            name: id
+            type: BIGINT
+            autoIncrement: true
+            constraints:
+                primaryKey: true
+        - column:
+            constraints:
+              nullable: false
+            name: starred
+            type: BOOLEAN
+        - column:
+            constraints:
+              nullable: false
+            name: completed
+            type: BOOLEAN
+        - column:
+            name: description
+            type: VARCHAR(255)
+        tableName: todo_item
+
